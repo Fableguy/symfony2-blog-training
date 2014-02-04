@@ -29,24 +29,24 @@ Create a database called blog.
 
 Composer
 --------
-ga to getcomposer.org
-klik op download. doe de windows installer.
-klaar.
-composer heb je nodig om packages binnen te halen zoals symfony2.
-later eventueel andere symfony2 bundles
+Go to getcomposer.org
+Click on download and use the windows installer.
+Done.
+You need composer to get packages like the symfony2 packages.
+Eventually you need other symfony2 bundles which can be obtained via composer.
 
 Symfony2 setup
 --------
-Open cmd. (je command line tool)
-ga naar je www map van wamp door cd /wamp/www te doen.
+Open cmd. (command line tool)
+Go to your www map in wamp by typing cd /wamp/www.
 
-ga naar http://symfony.com/doc/current/book/installation.html
-kopieer composer create-project symfony/framework-standard-edition /wamp/www/blog 2.4.*
-zie dat ik de path al heb ingevuld naar /wamp/www/blog en dat ik geen php ervoor heb en dat ik geen composer.phar heb maar composer.
-Hij gaat nu symfony2 binnen halen en configureren en in die map zetten.
+Go to http://symfony.com/doc/current/book/installation.html
+Copy: composer create-project symfony/framework-standard-edition /wamp/www/blog 2.4.*
+Notice that I filled in the path to /wamp/www/blog and that I didn't type php in front and that I didn't use composer.phar but just composer.
+It is going to get and configure symfony2 now and put it in the folder you have given.
 
-lijstje met antwoorden waar om gevraagd wordt tijdens de installatie,
-als het al tussen de blokhaken staat kun je op enter klikken want dan is dat de default waarde:
+A list with answers to the questions asked by your command line.
+(if the answer already stands between brackets you can click enter to use that answer as it is a default value):
 pdo_mysql
 127.0.0.1
 3306
@@ -58,13 +58,13 @@ gmail
 Your email address
 Your password
 en
-*Ram met uw voorhoofd uw toetsenbord voor een generieke secret*
+InsertVeryUniqueHashHere
 
-open httpd-vhosts.conf in je apache extra folder.
-bij mij is dat /wamp/bin/apache2/apache2.4.4/conf/extra/httpd-vhosts.conf
+Open httpd-vhosts.conf in your apache extra folder.
+On my pc that is /wamp/bin/apache2/apache2.4.4/conf/extra/httpd-vhosts.conf
 
-Ga naar http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
-kopieer:
+Go to http://symfony.com/doc/current/cookbook/configuration/web_server_configuration.html
+And copy:
     <VirtualHost *:80>
         ServerName domain.tld
         ServerAlias www.domain.tld
@@ -81,7 +81,7 @@ kopieer:
         CustomLog /var/log/apache2/project_access.log combined
     </VirtualHost>
 
-Verander het zoals deze is, maar dan je eigen naam:
+Change it like this, but with your own name in it ofcourse:
 
     <VirtualHost *:80>
         ServerName matthijs.blog
@@ -98,21 +98,21 @@ Verander het zoals deze is, maar dan je eigen naam:
         CustomLog /wamp/logs/matthijs_blog_access.log combined
     </VirtualHost>
 
-De servername gaan we toevoegen aan je hosts file zodat je er naartoe kan gaan in je browser.
+We are going to add the servername to your hosts file, so your browser knows where to look ;)
 
-Verander uw hosts file in /windows/system32/drivers/etc/hosts vergeet niet om dit als administator te doen (open kladblok als admin)
-voeg achter localhost uw eigen tld toe zoals matthijs.blog dat bij mij is.
+Change your hosts file in /windows/system32/drivers/etc/hosts.
+Don't forget to open your notepad as administrator.
+Add your tld to the localhost like matthijs.blog
 localhost    127.0.0.1 matthijs.blog
-staat er bij mij.
+is what it says in my hosts file.
 
-restart al uw wamp services(apache vooral) bij het icoontje rechts onderin
+Restart all wamp services by clicking on the bottom right corner icon of wamp and select restart all.
 
-ga vervolgens in uw browser naar matthijs.blog/app_dev.php
-tada uw symfony2 start pagina staat voor u klaar!
+Go to your browser and navigate to matthijs.blog/app_dev.php
+Your symfony2 start page is ready! w00t!
 
-app_dev.php staat in de web map van je blog applicatie(/wamp/www/blog). hier werk je mee zolang je aan het developen bent.
-alle url's zullen app_dev.php zometeen zoals: matthijs.blog/app_dev.php/create/blog-item/1.
-Wanneer je ooit in productie gaat, gebruik je de app.php.
-je zou zelfs een test environment kunnen toevoegen en dan naar app_test.php kunnen gaan ;)
-maar dat is een beetje overdreven voor ons :P
-Het idee is dat de applicatie zichzelf anders kan gedragen in develop modu, in productie modus en in test modus.
+app_dev.php stands in your web directory (/wamp/www/blog). This is where you work with as long you are developing.
+All generated urls will be to app_dev.php like: matthijs.blog/app_dev.php/create/blog-item/1.
+If you're going in production mode, you use app.php. For a test environment you use app_test.php... etc.
+The whole idea is that the application can behave differently based on its environment.
+Like extra debug information in the dev enviroment.
