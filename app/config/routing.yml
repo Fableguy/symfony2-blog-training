@@ -1,3 +1,7 @@
+blog_blog:
+    resource: "@BlogBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
 blog_account_bundle:
     resource: "@BlogAccountBundle/Resources/config/routing.yml"
 

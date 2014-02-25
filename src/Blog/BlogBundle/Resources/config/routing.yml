@@ -1,0 +1,3 @@
+blog_blogbundle.controller.blog_controller:
+    resource: "@BlogBlogBundle/Controller/BlogController.php"
+    type:     annotation
