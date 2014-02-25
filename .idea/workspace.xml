@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa8827ba-565e-410b-bfd5-f42aa8a39e85" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EXAMPLE_INSTALL_BUNDLES.md" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\AcmeDemoBundle.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Command\HelloWorldCommand.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Controller\DemoController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Controller\SecuredController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Controller\WelcomeController.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\DependencyInjection\AcmeDemoExtension.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\EventListener\ControllerListener.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Form\ContactType.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\config\routing.yml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\config\services.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\css\demo.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\blue-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\field-background.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\logo.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\search.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\welcome-configure.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\welcome-demo.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\public\images\welcome-quick-tour.gif" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Demo\contact.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Demo\hello.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Demo\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Secured\hello.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Secured\helloadmin.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Secured\layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Secured\login.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\Welcome\index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Resources\views\layout.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Tests\Controller\DemoControllerTest.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\wamp\www\symfony2-blog-training\src\Acme\DemoBundle\Twig\Extension\DemoExtension.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing_dev.yml" afterPath="$PROJECT_DIR$/app/config/routing_dev.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Blog/AccountBundle/Entity/Account.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Blog/AccountBundle/Repository/AccountRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EXAMPLE_USE_DATABASE_FOR_LOGIN.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
     </list>
     <ignored path="symfony2-blog-training.iws" />
@@ -72,9 +42,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="23" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
               <folding>
-                <marker date="1393357571087" expanded="true" signature="86:167" placeholder="blog_admin_bundle:" />
-                <marker date="1393357571087" expanded="true" signature="168:210" placeholder="login_check:" />
-                <marker date="1393357571087" expanded="true" signature="211:242" placeholder="logout:" />
+                <marker date="1393360745671" expanded="true" signature="86:167" placeholder="blog_admin_bundle:" />
+                <marker date="1393360745671" expanded="true" signature="168:210" placeholder="login_check:" />
+                <marker date="1393360745671" expanded="true" signature="211:242" placeholder="logout:" />
               </folding>
             </state>
           </provider>
@@ -100,17 +70,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Blog/AdminBundle/Controller/AdminController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
-              <folding>
-                <element signature="e#47#104#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="routing.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Blog/AdminBundle/Resources/config/routing.yml">
           <provider selected="true" editor-type-id="text-editor">
@@ -123,16 +82,48 @@
       <file leaf-file-name="parameters.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
+            <state line="11" column="29" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="security.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/security.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="47" selection-start="0" selection-end="963" vertical-scroll-proportion="0.780027" vertical-offset="0" max-vertical-offset="741">
+            <state line="0" column="0" selection-start="0" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="714">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EXAMPLE_USE_DATABASE_FOR_LOGIN.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EXAMPLE_USE_DATABASE_FOR_LOGIN.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="0.19568345" vertical-offset="0" max-vertical-offset="4777">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Account.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blog/AccountBundle/Entity/Account.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="184" column="7" selection-start="0" selection-end="3713" vertical-scroll-proportion="-14.923077" vertical-offset="2740" max-vertical-offset="3434">
+              <folding>
+                <element signature="e#45#77#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Blog/AccountBundle/Repository/AccountRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="2" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -163,8 +154,11 @@
         <option value="$PROJECT_DIR$/src/Blog/AdminBundle/Controller/AdminController.php" />
         <option value="$PROJECT_DIR$/src/Blog/AdminBundle/Resources/config/routing.yml" />
         <option value="$PROJECT_DIR$/src/Blog/AccountBundle/Resources/views/Security/login.html.twig" />
-        <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/EXAMPLE_INSTALL_BUNDLES.md" />
+        <option value="$PROJECT_DIR$/app/config/security.yml" />
+        <option value="$PROJECT_DIR$/src/Blog/AccountBundle/Repository/AccountRepository.php" />
+        <option value="$PROJECT_DIR$/src/Blog/AccountBundle/Entity/Account.php" />
+        <option value="$PROJECT_DIR$/EXAMPLE_USE_DATABASE_FOR_LOGIN.md" />
       </list>
     </option>
   </component>
@@ -266,100 +260,6 @@
               <option name="myItemId" value="Blog" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -405,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
+              <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -431,37 +331,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="symfony2-blog-training" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AccountBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Entity" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -697,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Blog/AdminBundle/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="451" selection-end="451" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="442">
@@ -747,9 +610,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="23" selection-start="242" selection-end="242" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <folding>
-            <marker date="1393357571087" expanded="true" signature="86:167" placeholder="blog_admin_bundle:" />
-            <marker date="1393357571087" expanded="true" signature="168:210" placeholder="login_check:" />
-            <marker date="1393357571087" expanded="true" signature="211:242" placeholder="logout:" />
+            <marker date="1393360745671" expanded="true" signature="86:167" placeholder="blog_admin_bundle:" />
+            <marker date="1393360745671" expanded="true" signature="168:210" placeholder="login_check:" />
+            <marker date="1393360745671" expanded="true" signature="211:242" placeholder="logout:" />
           </folding>
         </state>
       </provider>
@@ -781,11 +644,44 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="47" selection-start="0" selection-end="963" vertical-scroll-proportion="0.780027" vertical-offset="0" max-vertical-offset="741">
+        <state line="11" column="29" selection-start="356" selection-end="356" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="340">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/AccountBundle/Repository/AccountRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="138" selection-end="138" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Blog/AccountBundle/Entity/Account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="184" column="7" selection-start="0" selection-end="3713" vertical-scroll-proportion="-14.923077" vertical-offset="2740" max-vertical-offset="3434">
+          <folding>
+            <element signature="e#45#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="939" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EXAMPLE_USE_DATABASE_FOR_LOGIN.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="0.19568345" vertical-offset="0" max-vertical-offset="4777">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
       </provider>
     </entry>
   </component>
