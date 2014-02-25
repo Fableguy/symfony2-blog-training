@@ -1,3 +1,8 @@
 blog_adminbundle.controller.admin_controller:
     resource: "@BlogAdminBundle/Controller/AdminController.php"
     type:     annotation
+
+blog_adminbundle.controller.blog_controller:
+    resource: "@BlogAdminBundle/Controller/BlogController.php"
+    type:     annotation
+    prefix:   /admin

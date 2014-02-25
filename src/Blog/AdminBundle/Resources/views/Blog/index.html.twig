@@ -1,0 +1,9 @@
+{% for blog in blogs %}
+    {{ blog.title }}
+    {{ blog.body }}
+    <hr/>
+{% else %}
+    no blog items found.
+{% endfor %}
+
+<a href="{{ path('blog_admin.blog.new') }}">Create new blog</a>
