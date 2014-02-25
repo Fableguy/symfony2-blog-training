@@ -1,0 +1,11 @@
+blog_account_bundle:
+    resource: "@BlogAccountBundle/Resources/config/routing.yml"
+
+blog_admin_bundle:
+    resource: "@BlogAdminBundle/Resources/config/routing.yml"
+
+login_check:
+    path: /admin/login_check
+
+logout:
+    path: /admin/logout

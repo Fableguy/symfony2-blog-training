@@ -1,0 +1,3 @@
+blog_accountbundle.controller.security_controller:
+    resource: "@BlogAccountBundle/Controller/SecurityController.php"
+    type:     annotation
