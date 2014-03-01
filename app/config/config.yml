@@ -54,6 +54,13 @@ assetic:
                 - less
                 - cssrewrite
             output: css/home.css
+        blog_css:
+            inputs:
+                - %kernel.root_dir%/../src/Blog/BlogBundle/Resources/public/less/blog.less
+            filters:
+                - less
+                - cssrewrite
+            output: css/blog.css
         bootstrap_js:
             inputs:
                 - %kernel.root_dir%/../vendor/twbs/bootstrap/js/transition.js

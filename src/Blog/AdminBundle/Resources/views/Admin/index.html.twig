@@ -1,1 +1,29 @@
-Hello {{ name }}!
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    <div class="row">
+        <div class="col-md-12">
+            <p>Hello {{ name }}!</p>
+
+            <p>Please select one of the following options:</P>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Options</h3>
+            <div class="row">
+                <a class="admin-option" href="{{ path('blog_admin.blog.index') }}">
+                    <div class="col-md-2 well well-sm">
+                        Show all blog items
+                    </div>
+                </a>
+                <a class="admin-option" href="{{ path('blog_admin.blog.new') }}">
+                    <div class="col-md-offset-1 col-md-2 well well-sm">
+                        Create a new blog item
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock body %}

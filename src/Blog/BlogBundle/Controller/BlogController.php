@@ -14,6 +14,25 @@ class BlogController extends Controller
      */
     public function indexAction()
     {
-        return array('name' => 'test');
+        $blogRepository = $this->getBlogRepository();
+        $blogItems = $blogRepository->findAll();
+
+        return array('blogItems' => $blogItems);
+    }
+
+    /**
+     * @return \Blog\BlogBundle\Repository\BlogRepository
+     */
+    private function getBlogRepository()
+    {
+        return $this->getEntityManager()->getRepository('BlogBlogBundle:Blog');
+    }
+
+    /**
+     * @return \Doctrine\ORM\EntityManager
+     */
+    private function getEntityManager()
+    {
+        return $this->getDoctrine()->getManager();
     }
 }

@@ -15,6 +15,16 @@ class AdminController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('BlogAdminBundle:Admin:index.html.twig', array('name' => 'matthijs'));
+        $user = $this->getAccount();
+
+        return $this->render('BlogAdminBundle:Admin:index.html.twig', array('name' => $user->getUsername()));
+    }
+
+    /**
+     * @return \Blog\AccountBundle\Entity\Account
+     */
+    private function getAccount()
+    {
+        return $this->getUser();
     }
 }

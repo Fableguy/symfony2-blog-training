@@ -1,5 +1,38 @@
 {% extends '::base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/blog.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
 {% block body %}
-    Hello {{ name }}!
+    <div class="row">
+        <div class="col-md-12">
+            {% for blog in blogItems %}
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-md-9 blog-header-title">
+                            <h3>{{ blog.title }}</h3>
+                        </div>
+                        <div class="col-md-3 text-right blog-meta-data">
+                            <p>{{ blog.created|date }}</p>
+                        </div>
+                        <div class="col-md-12 blog-author">
+                            <p>Created by: {{ blog.author }}</p>
+                        </div>
+                        <div class="col-md-12 blog-body">
+                            <hr class="half-rule" style="border-top-color:black;">
+                            <p>{{ blog.body|raw }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <div class="well">
+                    <p>No blog items where found</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
 {% endblock body %}
+

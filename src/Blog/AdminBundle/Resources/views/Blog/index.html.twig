@@ -1,9 +1,50 @@
-{% for blog in blogs %}
-    {{ blog.title }}
-    {{ blog.body }}
-    <hr/>
-{% else %}
-    no blog items found.
-{% endfor %}
+{% extends '::base.html.twig' %}
 
-<a href="{{ path('blog_admin.blog.new') }}">Create new blog</a>
+{% block body %}
+    {#TODO: Make this dynamic and the options given by the controller.#}
+    {#TODO: Make a base template for Admin bundle root as they all need the same styling.#}
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Options</h3>
+            <div class="row">
+                 <a class="admin-option" href="{{ path('blog_admin.blog.new') }}">
+                    <div class="col-md-offset-1 col-md-2 well well-sm">
+                        Create a new blog item
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Body</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for blog in blogs %}
+                        <tr>
+                            <td>{{ blog.title }}</td>
+                            <td>{{ blog.author }}</td>
+                            <td>{{ blog.body }}</td>
+                            <td>Implement edit button</td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="3">no blog items found.</td>
+                        </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+{% endblock body %}

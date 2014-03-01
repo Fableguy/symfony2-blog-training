@@ -1,5 +1,35 @@
-<form action="{{ path('blog_admin.blog.new') }}" method="post">
-    {{ form_widget(form) }}
+{% extends '::base.html.twig' %}
 
-    <input type="submit" value="Create" >
-</form>
+{% block body %}
+    {#TODO: Make this dynamic and the options given by the controller.#}
+    {#TODO: Make a base template for blog as they could both need the same styling.#}
+
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Options</h3>
+            <div class="row">
+                <a class="admin-option" href="{{ path('blog_admin.blog.index') }}">
+                    <div class="col-md-2 well well-sm">
+                        Show all blog items
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <form class="form-horizontal" action="{{ path('blog_admin.blog.new') }}" method="post">
+                {{ form_widget(form) }}
+
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default">Create</button>
+                        <a class="btn btn-danger" href="{{ path('blog_admin.blog.index') }}">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock body %}
