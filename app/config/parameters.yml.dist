@@ -13,3 +13,6 @@ parameters:
 
     locale:            en
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    node_path: D:\Program Files\nodejs\node.exe
+    node_modules_path: C:\Users\Matthijs\AppData\Roaming\npm\node_modules
