@@ -6,11 +6,13 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Security\Core\SecurityContext;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class SecurityController extends Controller
 {
     /**
      * @Route("/login", name="blog_admin.security.login")
+     * @Template()
      */
     public function loginAction(Request $request)
     {
@@ -26,13 +28,10 @@ class SecurityController extends Controller
             $session->remove(SecurityContext::AUTHENTICATION_ERROR);
         }
 
-        return $this->render(
-            'BlogAccountBundle:Security:login.html.twig',
-            array(
-                // last username entered by the user
-                'last_username' => $session->get(SecurityContext::LAST_USERNAME),
-                'error'         => $error,
-            )
+        return array(
+            // last username entered by the user
+            'last_username' => $session->get(SecurityContext::LAST_USERNAME),
+            'error'         => $error,
         );
     }
 }

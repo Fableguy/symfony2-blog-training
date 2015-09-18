@@ -2,6 +2,7 @@
 
 namespace Blog\AdminBundle\Controller;
 
+use Blog\BlogBundle\Controller\BlogController;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 
@@ -15,9 +16,9 @@ class AdminController extends Controller
      */
     public function indexAction()
     {
-        $user = $this->getAccount();
+        $account = $this->getAccount();
 
-        return $this->render('BlogAdminBundle:Admin:index.html.twig', array('name' => $user->getUsername()));
+        return $this->render('BlogAdminBundle:Admin:index.html.twig', array('name' => $account->getUsername()));
     }
 
     /**

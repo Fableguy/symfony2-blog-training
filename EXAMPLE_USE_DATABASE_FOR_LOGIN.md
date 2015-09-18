@@ -1,8 +1,9 @@
 Login by account entity
 ======================
-Maak een Entity map in je AccountBundle.
-Maak daarbinnen een Account.php aan met de volgende content:
-Gebaseer op: http://symfony.com/doc/current/cookbook/security/entity_provider.html
+Create an Entity folder in your AccountBundle.
+Within that, create an Account.php with the following content:
+
+Based on: http://symfony.com/doc/current/cookbook/security/entity_provider.html
 
     <?php
 
@@ -202,7 +203,8 @@ Gebaseer op: http://symfony.com/doc/current/cookbook/security/entity_provider.ht
 
     }
 
-Maak ook een AccountRepository class in een Repository mapje net zoals je bij Account in Entity heb gedaan.
+Now create an AccountRepository class in a Repository folder, just like you did with the Account class in the Entity folder.
+Add this as content:
 
     <?php
 
@@ -213,26 +215,25 @@ Maak ook een AccountRepository class in een Repository mapje net zoals je bij Ac
     class AccountRepository extends EntityRepository{
 
     }
-
-Run vervolgens het volgende commando op de command line in je project er vanuit gaande dat je dit nog niet heb gedaan:
+Run the following command on the command line. Make sure you are still in your project folder:
 
     php app/console doctrine:schema:create
 
-Anders is het:
+If you had already done that once, use the following command:
 
     php app/console doctrine:schema:update --force
 
-Ga naar je Database toe via bijvoorbeeld localhost/phpmyadmin
-Ga naar je blog database en click op de accounts tabel
-Click vervolgens op de invoegen tab.
-Voeg een account toe.
-Voor het wachtwoord moet je bijv. naar http://www.sha1-online.com/
-Voer daar je test wachtwoord in.
-Mijn wachtwoord 'kaas' resulteerde in: f1fe2f1a3b8deaaa4a219653480f6c3d2140b9ab
-Vergeet niet is_active op 1 te zetten.
+Go to your database by going to localhost/phpmyadmin.
+Go to your blog database and click on the accounts table.
+Click on the insert tab.
+Add an account.
+For the password, you should go to something like: http://www.sha1-online.com/
+Fill in your test password over there.
+My password 'kaas' was: f1fe2f1a3b8deaaa4a219653480f6c3d2140b9ab
+Don't forget to put is_active on 1.
 
-Open vervoglens app/config/security.yml.
-Zorg dat hij er zo uit ziet:
+Now open app/config/security.yml
+Make sure it looks like this:
 
     security:
         encoders:
@@ -270,7 +271,5 @@ Zorg dat hij er zo uit ziet:
     access_control:
         - { path: ^/admin/, roles: ROLE_ADMIN }
 
-Dit zorgt ervoor dat hij je Account entity gebruikt om in te loggen.
-Daar staat hard gecodeerd dat je ROLE_ADMIN bent dus dat is top! :P
-sha1 hash is om het makkelijk zelf toe te voegen zonder registratie formulier...
-Later zal je Bcrypt gebruiken met een registratie formulier.
+This makes sure that the Account entity is used when logging in.
+ROLE_ADMIN is hard coded, so that is cool :D
